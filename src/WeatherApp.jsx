@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import imagen from './assets/app-clima.png'
 
 const API_KEY = "51fe76011943409ecade9e17caf2248b";
 const diffKelvin = 273.15
@@ -41,9 +42,7 @@ export const WeatherApp = () => {
     return (
         <div className='container'>
 
-            <img className="img-app" 
-                src="https://www.pngall.com/wp-content/uploads/11/Weather-Background-PNG.png"
-            ></img>
+            <img className="img-app" src={imagen}></img>
             
 
             <form onSubmit={handleSubmit}>
